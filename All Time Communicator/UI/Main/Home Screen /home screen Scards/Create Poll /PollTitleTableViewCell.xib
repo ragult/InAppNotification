@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PollTitleTableViewCell" rowHeight="71" id="KGk-i7-Jjw" customClass="PollTitleTableViewCell" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt8-d4-Jlr">
+                        <rect key="frame" x="252" y="25.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="VIb-Na-o86"/>
+                            <constraint firstAttribute="width" constant="20" id="iBU-Lj-bah"/>
+                        </constraints>
+                        <state key="normal" image="gallery"/>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EEP-1I-E2W">
+                        <rect key="frame" x="33" y="4" width="260" height="62.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fA-zE-cPH">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Question here" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="bgA-Nw-dwl">
+                                <rect key="frame" x="0.0" y="19" width="260" height="43.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="260" id="92c-aJ-kWZ"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Gt8-d4-Jlr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DDT-hU-HI3"/>
+                    <constraint firstItem="EEP-1I-E2W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Lp7-JI-kR7"/>
+                    <constraint firstItem="EEP-1I-E2W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="33" id="Tee-Cm-xWp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Gt8-d4-Jlr" secondAttribute="trailing" constant="32" id="UnK-Ty-Beh"/>
+                    <constraint firstAttribute="bottom" secondItem="EEP-1I-E2W" secondAttribute="bottom" constant="4" id="ehl-pW-T64"/>
+                    <constraint firstItem="EEP-1I-E2W" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kmt-jM-8s0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="questionTextField" destination="bgA-Nw-dwl" id="ixm-wf-UL1"/>
+            </connections>
+            <point key="canvasLocation" x="268.80000000000001" y="87.706146926536732"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="gallery" width="20" height="16.5"/>
+    </resources>
+</document>

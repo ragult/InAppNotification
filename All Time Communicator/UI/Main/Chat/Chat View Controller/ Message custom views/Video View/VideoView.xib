@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoView" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5qs-bW-erw">
+                    <rect key="frame" x="4" y="4" width="243" height="173"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.47843137250000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="173" id="XiN-tB-3fX"/>
+                        <constraint firstAttribute="width" constant="243" id="mcR-u1-ptK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XkB-y9-MbH">
+                    <rect key="frame" x="95.5" y="60.5" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="FXK-9A-CPz"/>
+                        <constraint firstAttribute="width" constant="60" id="XyX-VA-bxI"/>
+                    </constraints>
+                    <state key="normal" image="ic_play">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcB-Rl-Jvh">
+                    <rect key="frame" x="0.0" y="0.0" width="251" height="181"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-1T-ela">
+                            <rect key="frame" x="107" y="72" width="37" height="37"/>
+                            <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.80506345359999998" alpha="0.60054467430000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="IHf-1T-ela" firstAttribute="centerY" secondItem="IcB-Rl-Jvh" secondAttribute="centerY" id="esP-BQ-ziF"/>
+                        <constraint firstItem="IHf-1T-ela" firstAttribute="centerX" secondItem="IcB-Rl-Jvh" secondAttribute="centerX" id="kyE-Uf-iaf"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="WYB-Hl-CxC"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcE-IP-VTb">
+                    <rect key="frame" x="4" y="4" width="243" height="173"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IcB-Rl-Jvh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="456-zG-Del"/>
+                <constraint firstItem="ZcE-IP-VTb" firstAttribute="bottom" secondItem="5qs-bW-erw" secondAttribute="bottom" id="67m-Dt-HKU"/>
+                <constraint firstItem="XkB-y9-MbH" firstAttribute="centerY" secondItem="5qs-bW-erw" secondAttribute="centerY" id="7Fm-48-Yho"/>
+                <constraint firstItem="ZcE-IP-VTb" firstAttribute="leading" secondItem="5qs-bW-erw" secondAttribute="leading" id="7ue-uK-tSK"/>
+                <constraint firstItem="IcB-Rl-Jvh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D0Q-Zs-9Vu"/>
+                <constraint firstItem="IcB-Rl-Jvh" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NCM-rp-1vp"/>
+                <constraint firstItem="ZcE-IP-VTb" firstAttribute="top" secondItem="5qs-bW-erw" secondAttribute="top" id="PgL-0v-YYO"/>
+                <constraint firstItem="ZcE-IP-VTb" firstAttribute="trailing" secondItem="5qs-bW-erw" secondAttribute="trailing" id="oIQ-yV-put"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5qs-bW-erw" secondAttribute="bottom" constant="4" id="pdf-dS-TLU"/>
+                <constraint firstItem="5qs-bW-erw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="vrS-cs-dnV"/>
+                <constraint firstItem="5qs-bW-erw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="wPz-nX-oDI"/>
+                <constraint firstItem="IcB-Rl-Jvh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="x96-Ve-OLJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5qs-bW-erw" secondAttribute="trailing" constant="4" id="xZh-2l-Z9f"/>
+                <constraint firstItem="XkB-y9-MbH" firstAttribute="centerX" secondItem="5qs-bW-erw" secondAttribute="centerX" id="xpl-rC-IJk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="IHf-1T-ela" id="G8v-e4-Kix"/>
+                <outlet property="activityView" destination="IcB-Rl-Jvh" id="CnO-nA-X2H"/>
+                <outlet property="playButton" destination="XkB-y9-MbH" id="BCe-8Y-uJ7"/>
+                <outlet property="previewButton" destination="ZcE-IP-VTb" id="GPg-iS-e6z"/>
+                <outlet property="videoThumbnail" destination="5qs-bW-erw" id="SmS-VF-qRu"/>
+            </connections>
+            <point key="canvasLocation" x="-114" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_play" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotosView" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_profile" translatesAutoresizingMaskIntoConstraints="NO" id="BvS-Wk-BYK">
+                    <rect key="frame" x="2" y="2" width="246" height="186"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="246" id="HMF-QP-Vy1"/>
+                        <constraint firstAttribute="height" constant="186" id="bfr-r7-U7v"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZy-4w-7at">
+                    <rect key="frame" x="2" y="2" width="246" height="186"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7f-pm-Dx9">
+                    <rect key="frame" x="95" y="65" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="KG6-k9-oEg"/>
+                        <constraint firstAttribute="height" constant="60" id="ZOw-3q-JqD"/>
+                    </constraints>
+                    <state key="normal" image="ic_play">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9SG-AK-Doe">
+                    <rect key="frame" x="2" y="2" width="246" height="186"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-2R-R1c">
+                            <rect key="frame" x="104.5" y="74.5" width="37" height="37"/>
+                            <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.80506345363849763" alpha="0.60054467429577463" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ktr-2R-R1c" firstAttribute="centerY" secondItem="9SG-AK-Doe" secondAttribute="centerY" id="8sw-FX-P6q"/>
+                        <constraint firstItem="ktr-2R-R1c" firstAttribute="centerX" secondItem="9SG-AK-Doe" secondAttribute="centerX" id="ojh-Kj-L4W"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BvS-Wk-BYK" secondAttribute="trailing" constant="2" id="4sk-jr-9T3"/>
+                <constraint firstItem="BvS-Wk-BYK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="E3N-Ge-drF"/>
+                <constraint firstItem="NZy-4w-7at" firstAttribute="leading" secondItem="BvS-Wk-BYK" secondAttribute="leading" id="Iwu-zn-S4Q"/>
+                <constraint firstItem="NZy-4w-7at" firstAttribute="bottom" secondItem="BvS-Wk-BYK" secondAttribute="bottom" id="LQv-Pm-Bny"/>
+                <constraint firstItem="BvS-Wk-BYK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="Lg6-f6-T3t"/>
+                <constraint firstItem="9SG-AK-Doe" firstAttribute="leading" secondItem="BvS-Wk-BYK" secondAttribute="leading" id="Mkv-0h-DSf"/>
+                <constraint firstItem="9SG-AK-Doe" firstAttribute="top" secondItem="BvS-Wk-BYK" secondAttribute="top" id="Sjv-gf-rFh"/>
+                <constraint firstItem="S7f-pm-Dx9" firstAttribute="centerY" secondItem="BvS-Wk-BYK" secondAttribute="centerY" id="XtQ-Sy-Chr"/>
+                <constraint firstItem="S7f-pm-Dx9" firstAttribute="centerX" secondItem="BvS-Wk-BYK" secondAttribute="centerX" id="b0E-Z6-oH8"/>
+                <constraint firstItem="9SG-AK-Doe" firstAttribute="bottom" secondItem="BvS-Wk-BYK" secondAttribute="bottom" id="dR7-oC-gpP"/>
+                <constraint firstItem="9SG-AK-Doe" firstAttribute="trailing" secondItem="BvS-Wk-BYK" secondAttribute="trailing" id="iMd-o5-kEX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BvS-Wk-BYK" secondAttribute="bottom" constant="2" id="kaf-0c-T3Y"/>
+                <constraint firstItem="NZy-4w-7at" firstAttribute="top" secondItem="BvS-Wk-BYK" secondAttribute="top" id="ps3-PO-lCb"/>
+                <constraint firstItem="NZy-4w-7at" firstAttribute="trailing" secondItem="BvS-Wk-BYK" secondAttribute="trailing" id="yhu-Fj-6Mm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="extCornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="Photo" destination="BvS-Wk-BYK" id="duf-yG-fS7"/>
+                <outlet property="activityIndicatorView" destination="ktr-2R-R1c" id="0De-8g-yJi"/>
+                <outlet property="activityView" destination="9SG-AK-Doe" id="kDt-TJ-axv"/>
+                <outlet property="playButton" destination="S7f-pm-Dx9" id="jgs-aB-cqR"/>
+                <outlet property="previewButton" destination="NZy-4w-7at" id="nRO-A2-tX3"/>
+            </connections>
+            <point key="canvasLocation" x="-6.4000000000000004" y="33.283358320839582"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group_profile" width="360" height="216"/>
+        <image name="ic_play" width="48" height="48"/>
+    </resources>
+</document>

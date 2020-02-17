@@ -9,6 +9,10 @@
 import UIKit
 
 class InAppNotificationBanner: CustomizedView {
+    open var notiBackgroundColor: UIColor?
+    open var notiPadding : CGFloat?
+    open var notiCornerRadius : CGFloat?
+    
     private let contentView: CustomizedView = {
         let view = CustomizedView()
         view.clipsToBounds = true

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="KGk-i7-Jjw" customClass="inviteCustomHeader" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="36.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dh-KJ-yb2">
+                        <rect key="frame" x="272" y="6.5" width="36" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="EKE-rM-uvj"/>
+                        </constraints>
+                        <state key="normal" title="Send"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLw-YQ-WbR">
+                        <rect key="frame" x="12" y="6.5" width="127" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Y5s-Yc-hsT"/>
+                        </constraints>
+                        <state key="normal" title="Select all / Cancel "/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MLw-YQ-WbR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="TrP-G9-VlR"/>
+                    <constraint firstAttribute="trailing" secondItem="0Dh-KJ-yb2" secondAttribute="trailing" constant="12" id="aue-LV-QBs"/>
+                    <constraint firstItem="0Dh-KJ-yb2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ewf-zb-8jM"/>
+                    <constraint firstItem="MLw-YQ-WbR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xHU-iL-cfQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="150" y="175"/>
+        </tableViewCell>
+    </objects>
+</document>

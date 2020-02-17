@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Medium.otf">
+            <string>SanFranciscoDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="89p-hs-mlx" customClass="TextCardView" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jr9-wG-hNy">
+                    <rect key="frame" x="22" y="10" width="331" height="122"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EN-64-Udz">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="McL-0l-bgP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="16"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 4" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZK-sK-Pi2">
+                            <rect key="frame" x="0.0" y="30" width="331" height="29.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="bf9-Lf-8EM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Medium" family="San Francisco Display" pointSize="14"/>
+                            <color key="textColor" red="0.25882352941176467" green="0.29411764705882354" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-An-q71">
+                            <rect key="frame" x="0.0" y="64.5" width="331" height="57.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="pfE-Sc-xx8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jr9-wG-hNy" firstAttribute="bottom" secondItem="PWO-6Y-7lT" secondAttribute="bottom" constant="-10" id="C3c-Ib-O7Z"/>
+                <constraint firstItem="Jr9-wG-hNy" firstAttribute="leading" secondItem="PWO-6Y-7lT" secondAttribute="leading" constant="22" id="ExL-m0-l6I"/>
+                <constraint firstItem="Jr9-wG-hNy" firstAttribute="top" secondItem="PWO-6Y-7lT" secondAttribute="top" constant="10" id="JYV-bc-Xdg"/>
+                <constraint firstAttribute="trailing" secondItem="Jr9-wG-hNy" secondAttribute="trailing" constant="22" id="iIv-Vg-bzX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="PWO-6Y-7lT"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="C3c-Ib-O7Z" id="tBe-Gm-LjT"/>
+                <outlet property="emptyMsg" destination="wpK-An-q71" id="7bU-LE-vKb"/>
+                <outlet property="lblText" destination="oZK-sK-Pi2" id="BPj-Yq-yeS"/>
+                <outlet property="lblTitle" destination="2EN-64-Udz" id="bsZ-oJ-OcY"/>
+                <outlet property="leftConstaint" destination="ExL-m0-l6I" id="CO8-f9-UdC"/>
+                <outlet property="rightConstaint" destination="iIv-Vg-bzX" id="TkX-7X-QAj"/>
+                <outlet property="topConstraint" destination="JYV-bc-Xdg" id="ULG-DI-Z5e"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="-17"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="imageViewAnnouncementCard" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Ytu-Wh-Zle">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group_profile" translatesAutoresizingMaskIntoConstraints="NO" id="H87-5N-SpI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="extCornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-Ma-U6c">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IND-BW-v8p">
+                            <rect key="frame" x="24" y="69.5" width="271" height="57.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Announcement Title Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e53-Pf-nmw">
+                                    <rect key="frame" x="0.0" y="0.0" width="271" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="KKT-zA-gyp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello there, Announcment cards, Hello there, Announcment cards" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lp8-xz-mAC">
+                                    <rect key="frame" x="0.0" y="24" width="271" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DB-kt-z7f">
+                            <rect key="frame" x="167.5" y="50" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="37b-s0-W4J"/>
+                                <constraint firstAttribute="height" constant="40" id="X05-Nd-2KM"/>
+                            </constraints>
+                            <state key="normal" image="ic_play"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="IND-BW-v8p" secondAttribute="bottom" constant="13" id="1Zs-25-VKb"/>
+                        <constraint firstItem="5DB-kt-z7f" firstAttribute="centerY" secondItem="8gu-Ma-U6c" secondAttribute="centerY" id="e4N-Tp-HbV"/>
+                        <constraint firstItem="IND-BW-v8p" firstAttribute="leading" secondItem="8gu-Ma-U6c" secondAttribute="leading" constant="24" id="e72-b9-yJl"/>
+                        <constraint firstItem="5DB-kt-z7f" firstAttribute="centerX" secondItem="8gu-Ma-U6c" secondAttribute="centerX" id="fye-JK-pQg"/>
+                        <constraint firstAttribute="trailing" secondItem="IND-BW-v8p" secondAttribute="trailing" constant="80" id="ums-7a-FV7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8gu-Ma-U6c" firstAttribute="bottom" secondItem="Ytu-Wh-Zle" secondAttribute="bottom" id="FKy-Aq-vqm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ytu-Wh-Zle" secondAttribute="bottom" id="KOq-lN-125"/>
+                <constraint firstItem="8gu-Ma-U6c" firstAttribute="top" secondItem="Ytu-Wh-Zle" secondAttribute="top" id="cGl-6p-Ew7"/>
+                <constraint firstItem="8gu-Ma-U6c" firstAttribute="trailing" secondItem="Ytu-Wh-Zle" secondAttribute="trailing" id="fEO-Ki-oaj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ytu-Wh-Zle" secondAttribute="trailing" id="fWh-B3-bFR"/>
+                <constraint firstItem="Ytu-Wh-Zle" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iWP-Qo-Obz"/>
+                <constraint firstItem="Ytu-Wh-Zle" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="vrG-xf-je8"/>
+                <constraint firstItem="8gu-Ma-U6c" firstAttribute="leading" secondItem="Ytu-Wh-Zle" secondAttribute="leading" id="zgV-rW-kOb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="KOq-lN-125" id="qj2-EE-XJN"/>
+                <outlet property="imageComment" destination="Lp8-xz-mAC" id="zrX-qL-Ug1"/>
+                <outlet property="imageTitle" destination="e53-Pf-nmw" id="3Ok-DG-MEe"/>
+                <outlet property="imageView" destination="H87-5N-SpI" id="jUT-6e-PLn"/>
+                <outlet property="leftConstaint" destination="iWP-Qo-Obz" id="1ul-Ol-rUS"/>
+                <outlet property="onClickOfPlayBtn" destination="5DB-kt-z7f" id="F21-w4-sJo"/>
+                <outlet property="rightConstaint" destination="fWh-B3-bFR" id="wto-Ey-QAz"/>
+                <outlet property="topConstraint" destination="vrG-xf-je8" id="aSj-md-qEK"/>
+            </connections>
+            <point key="canvasLocation" x="201.59999999999999" y="200.59970014992504"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group_profile" width="360" height="216"/>
+        <image name="ic_play" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,21 @@
+{
+  "sys": {
+    "data": {
+      "adm_glbId": "984163373111",
+      "adm_imgUrl": "https://banner2.kisspng.com/20171128/18c/soccer-ball-transparent-png-clipart-5a1cee20e96727.565442611511845408956.jpg",
+      "adm_name": "Bindu",
+      "adm_phone": "919841633731",
+      "channel": "123456",
+      "grp_glbId": "165",
+      "name": "Tech Group",
+      "typ": "1",
+      "conf": "0",
+      "super_admin": "0",
+      "thumb_url": "https://banner2.kisspng.com/20171128/18c/soccer-ball-transparent-png-clipart-5a1cee20e96727.565442611511845408956.jpg"
+    },
+    "action": "grp_intro",
+    "type": "sys_entity"
+  },
+  "chnl": "123456",
+  "src": "sys"
+}

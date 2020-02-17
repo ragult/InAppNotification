@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SanFranciscoDisplay-Light.otf">
+            <string>SanFranciscoDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <view tag="1" contentMode="scaleToFill" id="C9v-45-Y1o" customClass="MusicPlayerView" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ir0-J9-Ksh">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+                    <subviews>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NNu-ye-evH">
+                            <rect key="frame" x="46.5" y="18.5" width="172" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="ozm-Hf-Xcq"/>
+                            </constraints>
+                            <color key="minimumTrackTintColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </slider>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nounAudio2112009Copy2" translatesAutoresizingMaskIntoConstraints="NO" id="5U5-BS-Fkf">
+                            <rect key="frame" x="18.5" y="19.5" width="16" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="EZ2-oy-wLS"/>
+                                <constraint firstAttribute="width" constant="16" id="UgI-IA-Scm"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-HL-m7S">
+                            <rect key="frame" x="220" y="10" width="30" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="NMu-oQ-AAY"/>
+                                <constraint firstAttribute="width" constant="30" id="Zph-Nq-E6u"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="12.5" maxX="0.0" maxY="7.5"/>
+                            <state key="normal" image="shapeWhite"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:40 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYM-eS-eQI">
+                            <rect key="frame" x="187.5" y="14.5" width="29" height="13"/>
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Light" family="San Francisco Display" pointSize="11"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Tpw-84-s2Q">
+                            <rect key="frame" x="225" y="20" width="20" height="20"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5U5-BS-Fkf" firstAttribute="centerY" secondItem="ir0-J9-Ksh" secondAttribute="centerY" constant="3" id="0ni-Sn-Qb4"/>
+                        <constraint firstItem="aHk-HL-m7S" firstAttribute="centerY" secondItem="ir0-J9-Ksh" secondAttribute="centerY" id="AUc-e5-aEq"/>
+                        <constraint firstItem="bYM-eS-eQI" firstAttribute="trailing" secondItem="NNu-ye-evH" secondAttribute="trailing" id="DFZ-h4-f9X"/>
+                        <constraint firstItem="Tpw-84-s2Q" firstAttribute="centerY" secondItem="aHk-HL-m7S" secondAttribute="centerY" id="I1x-UQ-gK6"/>
+                        <constraint firstItem="NNu-ye-evH" firstAttribute="centerY" secondItem="ir0-J9-Ksh" secondAttribute="centerY" constant="3" id="LWe-rK-WxO"/>
+                        <constraint firstItem="bYM-eS-eQI" firstAttribute="top" secondItem="5U5-BS-Fkf" secondAttribute="top" constant="-5" id="NnO-Ol-5tz"/>
+                        <constraint firstAttribute="trailing" secondItem="aHk-HL-m7S" secondAttribute="trailing" id="Oas-b2-Fr2"/>
+                        <constraint firstItem="aHk-HL-m7S" firstAttribute="leading" secondItem="NNu-ye-evH" secondAttribute="trailing" constant="3.5" id="UVg-Yt-tTA"/>
+                        <constraint firstItem="5U5-BS-Fkf" firstAttribute="leading" secondItem="ir0-J9-Ksh" secondAttribute="leading" constant="18.5" id="VIC-us-3oT"/>
+                        <constraint firstItem="NNu-ye-evH" firstAttribute="leading" secondItem="5U5-BS-Fkf" secondAttribute="trailing" constant="14" id="Vta-uK-hP8"/>
+                        <constraint firstAttribute="width" constant="250" id="cqS-Xg-IoC"/>
+                        <constraint firstItem="Tpw-84-s2Q" firstAttribute="centerX" secondItem="aHk-HL-m7S" secondAttribute="centerX" id="r11-HM-leJ"/>
+                        <constraint firstAttribute="height" constant="60" id="zxS-Oj-rNL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.62352941179999999" blue="0.60784313729999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ir0-J9-Ksh" firstAttribute="trailing" secondItem="uXb-Kz-BHh" secondAttribute="trailing" id="RIu-nT-54M"/>
+                <constraint firstAttribute="bottom" secondItem="ir0-J9-Ksh" secondAttribute="bottom" id="Tsu-Ed-ISF"/>
+                <constraint firstItem="ir0-J9-Ksh" firstAttribute="leading" secondItem="C9v-45-Y1o" secondAttribute="leading" id="lQQ-Vg-KqO"/>
+                <constraint firstItem="ir0-J9-Ksh" firstAttribute="top" secondItem="C9v-45-Y1o" secondAttribute="top" id="rV2-LL-TSw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="uXb-Kz-BHh"/>
+            <connections>
+                <outlet property="activityImage" destination="Tpw-84-s2Q" id="0FO-ds-uCi"/>
+                <outlet property="lblTime" destination="bYM-eS-eQI" id="tT8-PO-0vd"/>
+                <outlet property="playButton" destination="aHk-HL-m7S" id="QFF-7H-FLV"/>
+                <outlet property="playImage" destination="5U5-BS-Fkf" id="B47-cr-D5g"/>
+                <outlet property="songSlider" destination="NNu-ye-evH" id="0QB-oo-CQj"/>
+            </connections>
+            <point key="canvasLocation" x="169.59999999999999" y="-78.260869565217391"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="nounAudio2112009Copy2" width="16.5" height="25"/>
+        <image name="shapeWhite" width="14.5" height="20.5"/>
+    </resources>
+</document>

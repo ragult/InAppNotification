@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PollExpiresOnTableViewCell" rowHeight="438" id="KGk-i7-Jjw" customClass="PollExpiresOnTableViewCell" customModule="alltimecommunicator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="438"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="437.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fE6-rP-wEO">
+                        <rect key="frame" x="29" y="42" width="264" height="345"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="xW4-Md-mKo">
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7f8-XU-Ajt">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Ycx-AQ-eml"/>
+                                            <constraint firstAttribute="height" constant="30" id="d7g-o9-iMo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extCornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extBorderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="extBorderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SP-x8-pfd">
+                                        <rect key="frame" x="144" y="0.0" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="02R-Qe-dfr"/>
+                                            <constraint firstAttribute="width" constant="120" id="tLO-Tn-Op7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extCornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extBorderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="extBorderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7f8-XU-Ajt" firstAttribute="leading" secondItem="xW4-Md-mKo" secondAttribute="leading" id="JTN-s6-UUx"/>
+                                    <constraint firstAttribute="bottom" secondItem="8SP-x8-pfd" secondAttribute="bottom" id="ZRR-cV-HHC"/>
+                                    <constraint firstAttribute="bottom" secondItem="7f8-XU-Ajt" secondAttribute="bottom" id="otY-bt-WMV"/>
+                                    <constraint firstAttribute="trailing" secondItem="8SP-x8-pfd" secondAttribute="trailing" id="p1O-dy-OL1"/>
+                                    <constraint firstItem="7f8-XU-Ajt" firstAttribute="width" secondItem="8SP-x8-pfd" secondAttribute="width" id="xkb-OD-PTH"/>
+                                </constraints>
+                            </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGE-3U-xWS">
+                                <rect key="frame" x="0.0" y="68" width="264" height="277"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8m-p4-Q6n">
+                                        <rect key="frame" x="234" y="2" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="UR1-D4-ZrQ"/>
+                                            <constraint firstAttribute="height" constant="25" id="Vdj-Bh-yZk"/>
+                                        </constraints>
+                                        <state key="normal" image="successTick"/>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxD-my-0wr">
+                                        <rect key="frame" x="5" y="2" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="5Sc-V5-bfd"/>
+                                            <constraint firstAttribute="width" constant="25" id="ykE-xr-mUI"/>
+                                        </constraints>
+                                        <state key="normal" image="closeTick"/>
+                                    </button>
+                                    <datePicker hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wld-BM-NBW">
+                                        <rect key="frame" x="0.0" y="35" width="264" height="242"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="570946795.10500503">
+                                            <!--2019-02-04 04:19:55 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                            <!--2037-12-31 11:00:00 +0000-->
+                                        </date>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="extBorderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extBorderWidth">
+                                                <real key="value" value="0.40000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </datePicker>
+                                    <datePicker hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ekR-5R-TQc">
+                                        <rect key="frame" x="0.0" y="35" width="264" height="242"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="570946795.10500503">
+                                            <!--2019-02-04 04:19:55 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                            <!--2037-12-31 11:00:00 +0000-->
+                                        </date>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="extBorderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="extBorderWidth">
+                                                <real key="value" value="0.40000000000000002"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ekR-5R-TQc" secondAttribute="bottom" id="2FI-5k-adx"/>
+                                    <constraint firstItem="ekR-5R-TQc" firstAttribute="leading" secondItem="gGE-3U-xWS" secondAttribute="leading" id="3bw-ok-UVS"/>
+                                    <constraint firstItem="wld-BM-NBW" firstAttribute="leading" secondItem="gGE-3U-xWS" secondAttribute="leading" id="4WO-h9-dtL"/>
+                                    <constraint firstAttribute="bottom" secondItem="wld-BM-NBW" secondAttribute="bottom" id="5dU-Hn-OwG"/>
+                                    <constraint firstItem="AxD-my-0wr" firstAttribute="top" secondItem="gGE-3U-xWS" secondAttribute="top" constant="2" id="Azp-Mh-JPG"/>
+                                    <constraint firstItem="W8m-p4-Q6n" firstAttribute="top" secondItem="AxD-my-0wr" secondAttribute="top" id="IEg-Op-Pre"/>
+                                    <constraint firstItem="W8m-p4-Q6n" firstAttribute="top" secondItem="gGE-3U-xWS" secondAttribute="top" constant="2" id="IqQ-Ol-lnw"/>
+                                    <constraint firstAttribute="trailing" secondItem="wld-BM-NBW" secondAttribute="trailing" id="M5D-Qt-l6h"/>
+                                    <constraint firstItem="AxD-my-0wr" firstAttribute="leading" secondItem="gGE-3U-xWS" secondAttribute="leading" constant="5" id="UDy-4D-B5N"/>
+                                    <constraint firstItem="W8m-p4-Q6n" firstAttribute="bottom" secondItem="AxD-my-0wr" secondAttribute="bottom" id="Wqn-VE-lJI"/>
+                                    <constraint firstItem="ekR-5R-TQc" firstAttribute="top" secondItem="W8m-p4-Q6n" secondAttribute="bottom" constant="8" id="Ygi-y1-5VI"/>
+                                    <constraint firstAttribute="trailing" secondItem="W8m-p4-Q6n" secondAttribute="trailing" constant="5" id="Z1W-Yf-tLT"/>
+                                    <constraint firstAttribute="trailing" secondItem="ekR-5R-TQc" secondAttribute="trailing" id="bMp-TV-LGF"/>
+                                    <constraint firstItem="wld-BM-NBW" firstAttribute="top" secondItem="W8m-p4-Q6n" secondAttribute="bottom" constant="8" id="bl6-xW-ZPf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="345" id="595-7m-pHd"/>
+                            <constraint firstAttribute="bottom" secondItem="gGE-3U-xWS" secondAttribute="bottom" id="Lzm-cK-QDO"/>
+                            <constraint firstItem="gGE-3U-xWS" firstAttribute="leading" secondItem="fE6-rP-wEO" secondAttribute="leading" id="Ngz-EE-Zlh"/>
+                            <constraint firstItem="xW4-Md-mKo" firstAttribute="leading" secondItem="fE6-rP-wEO" secondAttribute="leading" id="YoF-hV-deD"/>
+                            <constraint firstItem="gGE-3U-xWS" firstAttribute="top" secondItem="xW4-Md-mKo" secondAttribute="bottom" constant="38" id="bcP-PE-Rb3"/>
+                            <constraint firstAttribute="trailing" secondItem="gGE-3U-xWS" secondAttribute="trailing" id="e65-W1-XoV"/>
+                            <constraint firstAttribute="trailing" secondItem="xW4-Md-mKo" secondAttribute="trailing" id="sb4-1O-N0d"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1N-52-Mwc">
+                        <rect key="frame" x="32" y="18" width="68" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrW-F8-gd7">
+                        <rect key="frame" x="173" y="18" width="31.5" height="15.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OrW-F8-gd7" firstAttribute="leading" secondItem="G1N-52-Mwc" secondAttribute="trailing" constant="73" id="0es-ir-arC"/>
+                    <constraint firstItem="OrW-F8-gd7" firstAttribute="top" secondItem="G1N-52-Mwc" secondAttribute="top" id="7Nt-CP-cmC"/>
+                    <constraint firstItem="fE6-rP-wEO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="ELD-Z1-bhM"/>
+                    <constraint firstItem="fE6-rP-wEO" firstAttribute="top" secondItem="G1N-52-Mwc" secondAttribute="bottom" constant="8.5" id="Rg0-83-z1G"/>
+                    <constraint firstItem="G1N-52-Mwc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="UQq-CA-NF7"/>
+                    <constraint firstItem="8SP-x8-pfd" firstAttribute="leading" secondItem="OrW-F8-gd7" secondAttribute="leading" id="Xbt-do-O0Q"/>
+                    <constraint firstItem="OrW-F8-gd7" firstAttribute="bottom" secondItem="G1N-52-Mwc" secondAttribute="bottom" id="bcN-oT-zGh"/>
+                    <constraint firstItem="fE6-rP-wEO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="42" id="fFG-jg-Nl9"/>
+                    <constraint firstAttribute="trailing" secondItem="fE6-rP-wEO" secondAttribute="trailing" constant="27" id="mAN-O4-fUn"/>
+                    <constraint firstItem="OrW-F8-gd7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="pv7-Bt-VYm"/>
+                    <constraint firstItem="G1N-52-Mwc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="rmh-wQ-kmZ"/>
+                    <constraint firstAttribute="bottom" secondItem="fE6-rP-wEO" secondAttribute="bottom" constant="50.5" id="w0w-4v-LC5"/>
+                    <constraint firstAttribute="trailing" secondItem="OrW-F8-gd7" secondAttribute="trailing" constant="115.5" id="xzd-PN-AM4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="BtnClose" destination="AxD-my-0wr" id="Cvd-ih-eSP"/>
+                <outlet property="BtnDone" destination="W8m-p4-Q6n" id="cY3-ay-4jH"/>
+                <outlet property="containView" destination="gGE-3U-xWS" id="ZWg-Te-Gzu"/>
+                <outlet property="datePicker" destination="wld-BM-NBW" id="gmI-td-mmQ"/>
+                <outlet property="lblDate" destination="7f8-XU-Ajt" id="PDr-bd-WpS"/>
+                <outlet property="lblTime" destination="8SP-x8-pfd" id="C7b-kJ-yKF"/>
+                <outlet property="timePicker" destination="ekR-5R-TQc" id="YcO-kV-a2h"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="301.34932533733138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="closeTick" width="45" height="45"/>
+        <image name="successTick" width="45" height="45"/>
+    </resources>
+</document>
